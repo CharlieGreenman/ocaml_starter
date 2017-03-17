@@ -1,5 +1,5 @@
 let rec print_list = function
-[] -> ()
+  [] -> ()
 | e::l -> print_int e ; print_string " " ; print_list l;;
 
 let rec rev l =
@@ -7,4 +7,4 @@ let rec rev l =
     [] -> []
   | h::t -> rev t @ [h];;
 
- rev [1; 2; 3; 4];;
+print_list (rev [1; 2; 3; 4])
